@@ -1,0 +1,474 @@
+/* Home Banner Design Area */
+.banner-container-div {
+  position: relative;
+}
+
+.banner-container-div:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 20em;
+    height: 20em; */
+  /* background: rgb(233, 134, 240, 0.6); */
+}
+
+.banner-image {
+  height: 100vh;
+  width: 100vw;
+}
+
+.banner-text p {
+  font-size: 1.5rem;
+  /* margin-top: 4rem; */
+  padding: 0;
+  margin: 0;
+}
+
+.banner-text h1 {
+  font-size: 4.5rem;
+  /* margin-bottom: 3rem; */
+}
+
+.banner-container {
+  position: relative;
+}
+
+.banner-bottom-card {
+  position: absolute;
+  bottom: -8%;
+  width: 100%;
+}
+
+.banner-botom-card-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem 2rem;
+  color: white;
+}
+
+.banner-botom-card-info i {
+  font-size: 2.4rem;
+  margin-right: 1rem;
+}
+
+.banner-botom-card-info h6 {
+  font-size: 1rem;
+}
+
+.banner-botom-card-info p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.banner-botom-card-div-1 {
+  background-color: #d159da;
+  border-radius: 8px;
+}
+
+.banner-botom-card-div-2 {
+  background-color: #1c2833;
+  border-radius: 8px;
+}
+
+/* Services Design Area */
+.our-service-container,
+.about-us-container,
+.review-container,
+.our-team-container {
+  padding: 8rem 0rem 8rem 0rem;
+}
+
+/* About Us Design Area */
+
+.about-col-div img,
+.why-choose-left-info-img-div img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.about-col-div p {
+  margin: 2rem auto;
+}
+
+.about-col-div button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #c033ca;
+  padding: 0.8rem 2rem;
+}
+
+.about-col-div button:hover {
+  background-color: #de72e6;
+}
+
+/* Why Choose Design Area */
+.why-choose-container {
+  padding: 8rem 0rem 8rem 0rem;
+  background: linear-gradient(
+      90deg,
+      rgb(233, 134, 240, 1) 0%,
+      rgb(233, 134, 240, 1) 30%,
+      rgb(233, 134, 240, 0.7) 50%,
+      rgb(233, 134, 240, 0.6) 70%,
+      rgb(233, 134, 240, 0.5) 100%
+    ),
+    url("https://as1.ftcdn.net/v2/jpg/00/83/62/94/1000_F_83629448_HRWWdWrziVFNqZgwzn5iAvsaYXjJdPbl.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.why-choose-left-info {
+  color: white;
+}
+
+.why-choose-left-info h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+.why-choose-left-info p {
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+
+.why-choose-left-info-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+
+.why-choose-left-info-div i {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+/* Product Design Area */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 40px;
+  background-color: white;
+  padding-top: 0%;
+  padding-bottom: 5%;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 2.5rem;
+}
+
+.product-review {
+  color: #5d6d7e;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.product-review i {
+  color: #c033ca;
+}
+
+.product-price {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #c033ca;
+}
+
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #c033ca;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #de72e6;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.original-price {
+  text-decoration: line-through;
+  color: #5d6d7e;
+  font-size: 0.875rem;
+}
+
+.discount-percentage {
+  color: #273746;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.discount-price {
+  color: #c033ca;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/* Achivment Deasign Area */
+.achivement-container {
+  padding: 8rem 0rem 8rem 0rem;
+  background: linear-gradient(
+      90deg,
+      rgb(233, 134, 240, 1) 0%,
+      rgb(233, 134, 240, 1) 30%,
+      rgb(233, 134, 240, 0.7) 50%,
+      rgb(233, 134, 240, 0.6) 70%,
+      rgb(233, 134, 240, 0.5) 100%
+    ),
+    url("https://png.pngtree.com/background/20230519/original/pngtree-shampoos-in-a-variety-of-scents-picture-image_2651035.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.achivement-div {
+  text-align: center;
+  color: white;
+}
+
+.achivement-div h1 {
+  font-size: 2.5rem;
+}
+
+/* Review Container Desagin Area */
+.review-section-div,
+.our-team-section-div {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.review-section-div:hover,
+.our-team-section-div:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.review-section-div p:nth-child(1) {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px 0px 0px;
+}
+.review-section-div-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-items: center;
+  margin: 40px auto;
+}
+
+.review-section-div-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px dotted #c033ca;
+}
+
+.review-section-div-info h5,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.review-section-div-info h5 {
+  color: #c033ca;
+}
+
+/* shopNow Design Area */
+.shopNow-home-container {
+  padding: 8rem 0rem 8rem 0rem;
+  background: linear-gradient(
+      90deg,
+      rgb(233, 134, 240, 0.5) 0%,
+      rgb(233, 134, 240, 0.6) 30%,
+      rgb(233, 134, 240, 0.7) 50%,
+      rgb(233, 134, 240, 1) 70%,
+      rgb(233, 134, 240, 1) 100%
+    ),
+    url("https://image.made-in-china.com/318f0j00bEJRZgfsaLWG/f6OvYWLPXyzt72G0n05-312075945146-mp4-264-hd-mp4.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.shopNow-div {
+  color: white;
+  text-align: start;
+}
+.shopNow-div img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.shopNow-div button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #c033ca;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+}
+
+.shopNow-div button:hover {
+  background-color: #de72e6;
+}
+
+/* Our Team Deasign Area */
+
+.our-team-section-div img {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.our-team-section-div-info h5,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.our-team-section-div-info h5 {
+  color: #c033ca;
+}
+
+/* Contact Us Design Area */
+
+.contact-us-container {
+  padding: 8rem 0rem 6rem 0rem;
+  background: linear-gradient(
+      90deg,
+      rgb(233, 134, 240, 0.8) 0%,
+      rgb(233, 134, 240, 0.7) 30%,
+      rgb(233, 134, 240, 0.6) 50%,
+      rgb(233, 134, 240, 0.7) 70%,
+      rgb(233, 134, 240, 0.8) 100%
+    ),
+    url("https://static.vecteezy.com/system/resources/previews/029/282/672/non_2x/natural-cosmetic-product-presentation-backstage-outdoors-forest-placement-white-blank-jar-shampoo-bottle-3d-ai-generative-free-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-us-form button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #c033ca;
+  padding: 0.8rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-us-form button:hover {
+  background-color: #de72e6;
+}
+
+/* ============================ */
+/* Respinsive Design Area */
+/* ============================= */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+  .banner-bottom-card {
+    position: relative;
+    bottom: none;
+    margin: 2rem auto;
+  }
+
+  .our-service-container {
+    padding: 5rem 0rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .banner-bottom-card {
+    position: relative;
+    bottom: none;
+    margin: 2rem auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .banner-botom-card-info i {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+  }
+
+  .banner-bottom-card {
+    bottom: -18%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1300px) {
+}
