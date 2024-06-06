@@ -4,9 +4,11 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import LightLogo from "../../Images/Assets/logo.png";
 import useFirebase from "../../Hooks/useFirebase";
+import useFunction from "../../Hooks/useFunction";
 
 const Navbar = () => {
   const { userInfo, handleLogout } = useFirebase();
+  const { admin } = useFunction();
 
   // JQuery for Navbar
   $(window).scroll(function () {
@@ -61,6 +63,13 @@ const Navbar = () => {
                       <i className="fa-solid fa-user"></i>
                     </NavLink>
                   </li>
+                  {admin === true && (
+                    <li>
+                      <NavLink to="/dashboard" className="nav-links">
+                        <i className="fa-solid fa-chart-bar"></i>
+                      </NavLink>
+                    </li>
+                  )}
                 </>
               ) : (
                 <>

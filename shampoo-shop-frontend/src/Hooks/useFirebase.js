@@ -6,6 +6,7 @@ import {
   onAuthStateChanged,
   updateProfile,
   signOut,
+  getIdToken,
 } from "firebase/auth";
 import FirebaseInitilaiz from "../Firebase/FirebaseInitilaiz";
 import { useAlert } from "react-alert";
@@ -23,6 +24,7 @@ const useFirebase = () => {
   const [error, setError] = useState();
   const [userInfo, setUserInfo] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [authToken, setAuthToken] = useState("");
   const alert = useAlert();
   const auth = getAuth();
   const navigate = useNavigate();
@@ -85,6 +87,9 @@ const useFirebase = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUserInfo(user);
+        getIdToken(user).then((idToken) => {
+          setAuthToken(idToken);
+        });
       }
       setLoading(false);
     });
@@ -112,6 +117,7 @@ const useFirebase = () => {
     alert,
     auth,
     loading,
+    authToken,
     navigate,
     setLoading,
     setError,

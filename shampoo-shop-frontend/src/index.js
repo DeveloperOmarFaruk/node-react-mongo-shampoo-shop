@@ -8,6 +8,7 @@ import {
   types,
 } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const options = {
   position: positions.TOP_RIGHT,
@@ -20,7 +21,9 @@ const options = {
 ReactDOM.render(
   <React.StrictMode>
     <AlertProvider template={AlertTemplate} {...options}>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </AlertProvider>
   </React.StrictMode>,
   document.getElementById("root")
