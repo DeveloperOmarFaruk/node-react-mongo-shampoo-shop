@@ -407,16 +407,18 @@ p {
   background-attachment: fixed;
 }
 
-.contact-us-form button {
+.contact-us-form button,
+.common-button {
   border: none;
   border-radius: 10px;
   color: white;
   background-color: #c033ca;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 2rem;
   margin-bottom: 2rem;
 }
 
-.contact-us-form button:hover {
+.contact-us-form button:hover,
+.common-button:hover {
   background-color: #de72e6;
 }
 

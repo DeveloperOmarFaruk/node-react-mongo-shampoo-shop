@@ -3,8 +3,11 @@ import $ from "jquery";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import LightLogo from "../../Images/Assets/logo.png";
+import useFirebase from "../../Hooks/useFirebase";
 
 const Navbar = () => {
+  const { userInfo, handleLogout } = useFirebase();
+
   // JQuery for Navbar
   $(window).scroll(function () {
     if ($(document).scrollTop() < 1) {
@@ -17,6 +20,7 @@ const Navbar = () => {
       $(".header").addClass("fixed");
     }
   });
+
   return (
     <>
       <header className="header">
@@ -44,6 +48,29 @@ const Navbar = () => {
                   Appoinment
                 </NavLink>
               </li>
+
+              {userInfo.email ? (
+                <>
+                  <li>
+                    <NavLink to="" className="nav-links" onClick={handleLogout}>
+                      Logout
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/user-profile" className="nav-links">
+                      <i className="fa-solid fa-user"></i>
+                    </NavLink>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li>
+                    <NavLink to="/login" className="nav-links">
+                      Login
+                    </NavLink>
+                  </li>
+                </>
+              )}
             </ul>
           </nav>
         </div>
