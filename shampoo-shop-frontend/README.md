@@ -11,8 +11,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 
-You may also see any lint errors in the console.
-
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
