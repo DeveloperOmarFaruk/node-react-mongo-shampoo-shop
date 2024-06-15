@@ -22,7 +22,7 @@ A simple dynamic e-commerce SPA(Single Page Application) has been created in thi
 12. React Alert
 13. Firebase
 14. Firebase Authentication
-15. Google Authentication
+15. Apex Chart
 16. Stripe Payment Gateway
 17. Node JS
 18. Express JS
@@ -33,18 +33,25 @@ A simple dynamic e-commerce SPA(Single Page Application) has been created in thi
 23. MongoDB Atlas
 24. Firebase Verify Token
 25. JWT Token
-26. Font Awesome
-27. Google Fonts
-28. HTML5
-29. CSS3
-30. Bootstrap5
-31. Material UI
+26. ImgBB
+27. Font Awesome
+28. Google Fonts
+29. HTML5
+30. CSS3
+31. Bootstrap5
+32. Material UI
 
 #
 ### `Project Deploy`
 #
 1. Netlify (Frontend Part)
 2. Vercel (Backend Part)
+
+#
+### `Admin Login`
+#
+1. Email: admin@admin.com
+2. Password: 123456
     
 
 #
