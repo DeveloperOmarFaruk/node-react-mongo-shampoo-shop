@@ -1,7 +1,10 @@
 import React from "react";
 import "./MultipleComponents.css";
+import useFunction from "../../Hooks/useFunction";
 
 const ContactUs = () => {
+  const { contactData, handleContactChange, handleContactSubmit } =
+    useFunction();
   return (
     <>
       <div className="contact-us-container">
@@ -26,7 +29,7 @@ const ContactUs = () => {
           <div className="row gx-5 gy-5">
             <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12"></div>
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-              <form className="contact-us-form">
+              <form className="contact-us-form" onSubmit={handleContactSubmit}>
                 <div class="form-floating mb-4 mt-4">
                   <input
                     type="email"
@@ -35,6 +38,8 @@ const ContactUs = () => {
                     placeholder="Email Address"
                     required
                     name="contactEmail"
+                    value={contactData.contactEmail}
+                    onChange={handleContactChange}
                   />
                   <label for="floatingInput">Email Address</label>
                 </div>
@@ -47,6 +52,8 @@ const ContactUs = () => {
                     placeholder="Your Subject"
                     required
                     name="contactSubject"
+                    value={contactData.contactSubject}
+                    onChange={handleContactChange}
                   />
                   <label for="floatingInput">Your Subject</label>
                 </div>
@@ -60,6 +67,8 @@ const ContactUs = () => {
                     style={{ height: "200px" }}
                     required
                     name="contactMessage"
+                    value={contactData.contactMessage}
+                    onChange={handleContactChange}
                   ></textarea>
                   <label for="floatingTextarea2">Your Message</label>
                 </div>

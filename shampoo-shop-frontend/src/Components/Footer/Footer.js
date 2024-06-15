@@ -89,7 +89,7 @@ const Footer = () => {
                       className="form-control"
                       id="floatingInput"
                       placeholder="name@example.com"
-                      style={{ border: "1px solid #054d56" }}
+                      style={{ border: "1px solid #c033ca" }}
                     />
                     <label for="floatingInput">Email address</label>
                   </div>

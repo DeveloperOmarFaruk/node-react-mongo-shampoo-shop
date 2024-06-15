@@ -54,16 +54,16 @@ const DashboardApp = () => {
             </li>
 
             <li>
-              <NavLink to="services">
-                <i className="fa-solid fa-server"></i>
-                <span className="link_names">Services</span>
+              <NavLink to="products">
+                <i className="fa-solid fa-shop"></i>
+                <span className="link_names">Products</span>
               </NavLink>
             </li>
 
             <li>
-              <NavLink to="doctors">
-                <i className="fa-solid fa-stethoscope"></i>
-                <span className="link_names">Doctor's</span>
+              <NavLink to="orders">
+                <i className="fa-solid fa-cart-shopping"></i>
+                <span className="link_names">Orders</span>
               </NavLink>
             </li>
 

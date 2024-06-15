@@ -103,6 +103,7 @@ const useFirebase = () => {
     signOut(auth)
       .then(() => {
         setUserInfo({});
+        alert.show("Logout Successful");
         navigate(`/home`);
       })
       .catch((error) => {

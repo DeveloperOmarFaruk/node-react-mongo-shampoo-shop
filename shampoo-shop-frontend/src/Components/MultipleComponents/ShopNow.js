@@ -1,7 +1,9 @@
 import React from "react";
 import "./MultipleComponents.css";
+import useFunction from "../../Hooks/useFunction";
 
 const ShopNow = () => {
+  const { navigate } = useFunction();
   return (
     <>
       <div className="shopNow-home-container">
@@ -59,7 +61,14 @@ const ShopNow = () => {
                   confidence. If a product doesn’t meet your expectations, we’ll
                   make it right.
                 </p>
-                <button>Shop Now</button>
+                <button
+                  onClick={() => {
+                    navigate(`/products`);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>

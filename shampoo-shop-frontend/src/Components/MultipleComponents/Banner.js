@@ -1,8 +1,10 @@
 import React from "react";
 import "./MultipleComponents.css";
 import Banner1 from "../../Images/Assets/background1.png";
+import useFunction from "../../Hooks/useFunction";
 
 const Banner = () => {
+  const { navigate } = useFunction();
   return (
     <>
       <div className="banner-container">
@@ -29,7 +31,13 @@ const Banner = () => {
                   conditioners and more.
                 </h1>
 
-                <button className="btn btn-outline-light px-4 py-2 rounded-0">
+                <button
+                  className="btn btn-outline-light px-4 py-2 rounded-0"
+                  onClick={() => {
+                    navigate(`/products`);
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   Shop Now
                 </button>
               </div>
@@ -51,7 +59,13 @@ const Banner = () => {
                   conditioners and more.
                 </h1>
 
-                <button className="btn btn-outline-light px-4 py-2 rounded-0">
+                <button
+                  className="btn btn-outline-light px-4 py-2 rounded-0"
+                  onClick={() => {
+                    navigate(`/products`);
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   Shop Now
                 </button>
               </div>

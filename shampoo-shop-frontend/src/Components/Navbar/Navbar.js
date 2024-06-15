@@ -8,7 +8,7 @@ import useFunction from "../../Hooks/useFunction";
 
 const Navbar = () => {
   const { userInfo, handleLogout } = useFirebase();
-  const { admin } = useFunction();
+  const { admin, quantityTotal } = useFunction();
 
   // JQuery for Navbar
   $(window).scroll(function () {
@@ -46,13 +46,18 @@ const Navbar = () => {
               </li>
 
               <li>
-                <NavLink to="/appoinment" className="nav-links">
-                  Appoinment
+                <NavLink to="/products" className="nav-links">
+                  Products
                 </NavLink>
               </li>
 
               {userInfo.email ? (
                 <>
+                  <li>
+                    <NavLink to="/my-order" className="nav-links">
+                      My Order
+                    </NavLink>
+                  </li>
                   <li>
                     <NavLink to="" className="nav-links" onClick={handleLogout}>
                       Logout
@@ -63,13 +68,14 @@ const Navbar = () => {
                       <i className="fa-solid fa-user"></i>
                     </NavLink>
                   </li>
-                  {admin === true && (
-                    <li>
-                      <NavLink to="/dashboard" className="nav-links">
-                        <i className="fa-solid fa-chart-bar"></i>
-                      </NavLink>
-                    </li>
-                  )}
+                  <li>
+                    <NavLink to="/cart" className="nav-links">
+                      <i className="fa fa-shopping-cart cart-icon2"></i>
+                      <span className="cart-total cart-total-2">
+                        {quantityTotal}
+                      </span>
+                    </NavLink>
+                  </li>
                 </>
               ) : (
                 <>
@@ -79,6 +85,14 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                 </>
+              )}
+
+              {userInfo.email && admin === true && (
+                <li>
+                  <NavLink to="/dashboard" className="nav-links">
+                    <i className="fa-solid fa-chart-bar"></i>
+                  </NavLink>
+                </li>
               )}
             </ul>
           </nav>

@@ -12,6 +12,16 @@ import UserProfile from "./Pages/UserProfile/UserProfile";
 import DashboardApp from "./Pages/Dashboard/DashboardApp";
 import DashboardUsers from "./Pages/Dashboard/DashboardMultiComponents/DashboardUsers";
 import AdminRoute from "./AdminRoute/AdminRoute";
+import DashboardProducts from "./Pages/Dashboard/DashboardMultiComponents/DashboardProducts";
+import AddProduct from "./Pages/Dashboard/DashboardMultiComponents/AddProduct";
+import Products from "./Pages/Products/Products";
+import Cart from "./Pages/Cart/Cart";
+import Success from "./Pages/Cart/Success";
+import MyOrder from "./Pages/MyOrder/MyOrder";
+import DashboardOrder from "./Pages/Dashboard/DashboardMultiComponents/DashboardOrder";
+import DashboardContactUs from "./Pages/Dashboard/DashboardMultiComponents/DashboardContactUs";
+import DashboardHome from "./Pages/Dashboard/DashboardMultiComponents/DashboardHome";
+import Error404 from "./Pages/Error404/Error404";
 
 function App() {
   const location = useLocation();
@@ -19,8 +29,9 @@ function App() {
   const excludedRoutes = [
     "/dashboard",
     "/dashboard/users",
-    "/dashboard/services",
-    "/dashboard/doctors",
+    "/dashboard/products",
+    "/dashboard/product-add",
+    "/dashboard/orders",
     "/dashboard/contact-us",
   ];
 
@@ -32,6 +43,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/products" element={<Products />} />
 
         {/* ================== */}
         {/* Admin  Route Area */}
@@ -46,10 +58,55 @@ function App() {
           }
         >
           <Route
+            path=""
+            element={
+              <AdminRoute>
+                <DashboardHome />
+              </AdminRoute>
+            }
+          />
+
+          <Route
             path="users"
             element={
               <AdminRoute>
                 <DashboardUsers />
+              </AdminRoute>
+            }
+          />
+
+          <Route
+            path="products"
+            element={
+              <AdminRoute>
+                <DashboardProducts />
+              </AdminRoute>
+            }
+          />
+
+          <Route
+            path="/dashboard/product-add"
+            element={
+              <AdminRoute>
+                <AddProduct />
+              </AdminRoute>
+            }
+          />
+
+          <Route
+            path="orders"
+            element={
+              <AdminRoute>
+                <DashboardOrder />
+              </AdminRoute>
+            }
+          />
+
+          <Route
+            path="contact-us"
+            element={
+              <AdminRoute>
+                <DashboardContactUs />
               </AdminRoute>
             }
           />
@@ -60,10 +117,19 @@ function App() {
         {/* ================== */}
 
         <Route
-          path="/purchase"
+          path="/purchase/:id"
           element={
             <PrivateRoute>
               <Purchase />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/cart"
+          element={
+            <PrivateRoute>
+              <Cart />
             </PrivateRoute>
           }
         />
@@ -76,6 +142,26 @@ function App() {
             </PrivateRoute>
           }
         />
+
+        <Route
+          path="/success"
+          element={
+            <PrivateRoute>
+              <Success />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/my-order"
+          element={
+            <PrivateRoute>
+              <MyOrder />
+            </PrivateRoute>
+          }
+        />
+
+        <Route path="*" element={<Error404 />} />
       </Routes>
       {!excludedRoutes.includes(location.pathname) && <Footer />}
     </>

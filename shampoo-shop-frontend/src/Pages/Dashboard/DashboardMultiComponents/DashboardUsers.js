@@ -1,5 +1,6 @@
 import React from "react";
 import useFunction from "../../../Hooks/useFunction";
+import UserTable from "./UserTable";
 
 const DashboardUsers = () => {
   const { handleMakeAdmin, setAdminEmail } = useFunction();
@@ -26,6 +27,10 @@ const DashboardUsers = () => {
           >
             Add Admin
           </button>
+        </div>
+
+        <div className="mt-4">
+          <UserTable />
         </div>
       </div>
 

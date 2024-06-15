@@ -3,8 +3,10 @@ import "./MultipleComponents.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import useFunction from "../../Hooks/useFunction";
 
 const OurProducts = () => {
+  const { products, navigate } = useFunction();
   let settings = {
     dots: true,
     infinite: true,
@@ -65,137 +67,73 @@ const OurProducts = () => {
 
           <div>
             <Slider {...settings}>
-              <div>
-                <div class="product-card">
-                  <img
-                    src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                    alt="Product Name"
-                    className="product-image"
-                  />
-                  <div className="pe-2 ps-2 text-center">
-                    <h3 className="product-name">Product Name</h3>
-                    <p className="product-description">
-                      Mini Metal Portable Wireless Bluetooth Speaker Mini Metal
-                      Portable Wireless Bluetooth Speaker
-                    </p>
+              {products.map((item) => (
+                <div key={item._id}>
+                  <div class="product-card">
+                    <img
+                      src={item.productImage}
+                      alt="Product_Image"
+                      className="product-image"
+                    />
+                    <div className="pe-2 ps-2 text-center">
+                      <h3
+                        className="product-name"
+                        style={{
+                          textTransform: "capitalize",
+                        }}
+                      >
+                        {item.productTitle}
+                      </h3>
+                      <p className="product-description">
+                        {item.productDescription}
+                      </p>
 
-                    <div className="product-price">
-                      <span className="product-review">
-                        <i className="fa-solid fa-star"></i>&nbsp;4.5/5
-                        &nbsp;(300) &nbsp;&nbsp;2k sold
-                      </span>
-                    </div>
+                      <div className="product-price">
+                        <span className="product-review">
+                          <i className="fa-solid fa-star"></i>&nbsp;4.5/5
+                          &nbsp;(300) &nbsp;&nbsp;2k sold
+                        </span>
+                      </div>
 
-                    <div className="product-price">
-                      <span className="original-price">$200</span>
-                      <span className="discount-percentage ">-50%</span>
+                      <div className="product-price">
+                        {item.productDiscountPrice === 0 ? (
+                          <>
+                            <span className="original-price"></span>
+                            <span className="discount-percentage "></span>
+                          </>
+                        ) : (
+                          <>
+                            <span className="original-price">
+                              ${item.productPrice}
+                            </span>
+                            <span className="discount-percentage ">
+                              -{item.productDiscount}%
+                            </span>
+                          </>
+                        )}
+                      </div>
+                      <div className="product-price">
+                        <span className="discount-price">
+                          $
+                          {item.productDiscountPrice === 0
+                            ? item.productPrice
+                            : item.productDiscountPrice}
+                        </span>
+                      </div>
+                      <button
+                        className="add-to-cart-button"
+                        onClick={() => {
+                          navigate(`/purchase/${item._id}`);
+                          window.scrollTo(0, 0);
+                        }}
+                      >
+                        <i className="fa-solid fa-cart-shopping"></i>&nbsp; Add
+                        to Cart
+                      </button>
                     </div>
-                    <div className="product-price">
-                      <span className="discount-price">$79.99</span>
-                    </div>
-                    <button className="add-to-cart-button">Add to Cart</button>
                   </div>
                 </div>
-              </div>
-
-              <div>
-                <div class="product-card">
-                  <img
-                    src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
-                    alt="Product Name"
-                    className="product-image"
-                  />
-                  <div className="pe-2 ps-2 text-center">
-                    <h3 className="product-name">Product Name</h3>
-                    <p className="product-description">
-                      Mini Metal Portable Wireless Bluetooth Speaker Mini Metal
-                      Portable Wireless Bluetooth Speaker
-                    </p>
-
-                    <div className="product-price">
-                      <span className="product-review">
-                        <i className="fa-solid fa-star"></i>&nbsp;4.5/5
-                        &nbsp;(300) &nbsp;&nbsp;2k sold
-                      </span>
-                    </div>
-
-                    <div className="product-price">
-                      <span className="original-price">$200</span>
-                      <span className="discount-percentage ">-50%</span>
-                    </div>
-                    <div className="product-price">
-                      <span className="discount-price">$79.99</span>
-                    </div>
-                    <button className="add-to-cart-button">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="product-card">
-                  <img
-                    src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=384&q=80"
-                    alt="Product Name"
-                    className="product-image"
-                  />
-                  <div className="pe-2 ps-2 text-center">
-                    <h3 className="product-name">Product Name</h3>
-                    <p className="product-description">
-                      Mini Metal Portable Wireless Bluetooth Speaker Mini Metal
-                      Portable Wireless Bluetooth Speaker
-                    </p>
-
-                    <div className="product-price">
-                      <span className="product-review">
-                        <i className="fa-solid fa-star"></i>&nbsp;4.5/5
-                        &nbsp;(300) &nbsp;&nbsp;2k sold
-                      </span>
-                    </div>
-
-                    <div className="product-price">
-                      <span className="original-price"></span>
-                      <span className="discount-percentage "></span>
-                    </div>
-                    <div className="product-price">
-                      <span className="discount-price">$79.99</span>
-                    </div>
-                    <button className="add-to-cart-button">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="product-card">
-                  <img
-                    src="https://cdn4.ethoswatches.com/the-watch-guide/wp-content/uploads/2023/04/Urwerk-UR-210-RG-Titanium-Rose-Gold-Automatic-Movement-Masthead-Mobile.jpg"
-                    alt="Product Name"
-                    className="product-image"
-                  />
-                  <div className="pe-2 ps-2 text-center">
-                    <h3 className="product-name">Product Name</h3>
-                    <p className="product-description">
-                      Mini Metal Portable Wireless Bluetooth Speaker Mini Metal
-                      Portable Wireless Bluetooth Speaker
-                    </p>
-
-                    <div className="product-price">
-                      <span className="product-review">
-                        <i className="fa-solid fa-star"></i>&nbsp;4.5/5
-                        &nbsp;(300) &nbsp;&nbsp;2k sold
-                      </span>
-                    </div>
-
-                    <div className="product-price">
-                      <span className="original-price">$200</span>
-                      <span className="discount-percentage ">-50%</span>
-                    </div>
-                    <div className="product-price">
-                      <span className="discount-price">$79.99</span>
-                    </div>
-                    <button className="add-to-cart-button">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
+              ))}
             </Slider>
           </div>
         </div>
