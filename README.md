@@ -74,136 +74,119 @@ A simple dynamic e-commerce SPA(Single Page Application) has been created in thi
 #
 ### `Home Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/Home.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/Home.png)
 
 #
-### `Appointment Page`
+### `Products Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/Appointment.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/Products.png)
 #
-### `Appointment Booking`
+### `Purchase Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/AppointmentBookForm.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/Purchase.png)
 
 #
-### `My Appointment Page`
+### `Cart Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/MyAppointment.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/Cart.png)
 
 #
-### `My Appointment View`
+### `Stripe Payment Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/MyAppointmentView.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/StripePayment.png)
 
 
 
 #
-### `Order Page`
+### `Success Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/Order.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/Success.png)
+
+#
+### `My Order Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/MyOrder.png)
 
 #
 ### `Dashboard Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardAppointment.png)
-
-#
-### `Dashboard Appointment View`
-#
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardAppointmentView.png)
-
-#
-### `Dashboard Appointment Action`
-#
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardAppointmentAction.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/DashboardHome.png)
 
 #
 ### `Dashboard Users Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardUsers.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/DashboardUsers.png)
+
+#
+### `Dashboard Admin Create`
+#
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/AdminCreate.png)
+
+#
+### `Dashboard Products Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/DashboardProducts.png)
 
 #
 #
-### `Dashboard Add Admin`
+### `Dashboard Product Details`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardUsersAddAdmin.png)
-
-#
-
-#
-### `Dashboard Services Page`
-#
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardServices.png)
-
-#
-
-
-#
-### `Dashboard Add Service`
-#
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardAddService.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/ProductDetails.png)
 
 #
 
 #
-### `Dashboard Edit Service`
+### `Dashboard Product Edit`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardEditService.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/ProductUpdate.png)
+
+#
+
+
+#
+### `Dashboard Order Page`
+#
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/DashboardOrders.png)
 
 #
 
 #
-### `Dashboard Doctor's Page`
+### `Dashboard Order Details`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardDoctors.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/OrderDetails.png)
 
-#
-
-#
-### `Dashboard Add Doctor`
-#
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardAddDoctor.png)
-
-#
-
-#
-### `Dashboard Edit Doctor`
-#
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardEditDoctor.png)
-
-#
 
 #
 ### `Dashboard Contact Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardContact.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/DashboardContactUs.png)
 
 #
 
 #
 ### `Dashboard Contact Details`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/DashboardContactDetails.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/ContactUsDetails.png)
 
 #
 
 ### `Login Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/Login.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/Login.png)
 
 #
 ### `Register Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/Register.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/Register.png)
 
 #
 ### `User Profile Page`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/blob/main/frontend/src/Images/UI/UserProfile.png)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/UserProfile.png)
 
 #
 ### `Error 404`
 #
-![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-docfind-portal/assets/75971859/0c2f339d-4e83-4762-b8c8-3c23f36798bf)
+![image](https://github.com/DeveloperOmarFaruk/node-react-mongo-shampoo-shop/blob/main/shampoo-shop-frontend/src/Images/UI/Error404.png)
 
 #
