@@ -58,18 +58,20 @@ A simple dynamic e-commerce SPA(Single Page Application) has been created in thi
 ### `Project Pages`
 #
 1. Home
-2. Appointment
-3. My Appointment
-4. Order
-5. Dashboard
-6. Dashboard Users
-7. Dashboard Services
-8. Dashboard Doctor's
-9. Dashboard Contact
-10. Login
-11. Register
-12. User Profile
-13. Error 404
+2. Product
+3. Purchase
+4. Cart
+5. Success
+6. My Order
+7. Dashboard
+8. Dashboard Users
+9. Dashboard Products
+10. Dashboard Orders
+11. Dashboard Contact
+12. Login
+13. Register
+14. User Profile
+15. Error 404
 
 #
 ### `Home Page`
