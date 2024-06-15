@@ -1,12 +1,10 @@
  # Here is some UI and work shown in this repository
 #
-[Live Preview Project](https://docfind-dental-booking.netlify.app/)
+[Live Preview Project](https://shampoo-shop.netlify.app/)
 #
 ## Project Details
 #
-An online doctor booking system has been worked on in this repository. Users can make appointment bookings by registering or logging in and see their appointment details by going to my appointment. 
-Users can pay booking fees through the Stripe payment gateway by clicking the pay button and showing the paid status if payment is successful. 
-Appointment details can be seen on the admin dashboard and the admin can update the booking status user's booking status Visited or Not Visited.
+A simple dynamic e-commerce SPA(Single Page Application) has been created in this repository. Users can create an account and add the product to the cart to go to the purchase page and click the order confirm button to go cart page. After filling in the shipping information and clicking the checkout button, the user will be taken to the Stripe payment page. If the payment process is successful, the user will be brought to the success page. Users can go to my order page to see the purchased order items information.
 #
 ### `Technology Use`
 #
