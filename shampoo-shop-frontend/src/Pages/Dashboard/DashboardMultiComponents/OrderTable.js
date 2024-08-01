@@ -107,8 +107,8 @@ const OrderTable = () => {
         <table aria-label="custom pagination table">
           <thead>
             <tr>
+              <th scope="col"> S.No.</th>
               <th scope="col"> Name</th>
-
               <th scope="col">Phone</th>
               <th scope="col">Address</th>
               <th scope="col">Quantity</th>
@@ -125,10 +125,10 @@ const OrderTable = () => {
                   page * rowsPerPage + rowsPerPage
                 )
               : ordersAdmin
-            ).map((item) => (
+            ).map((item, index) => (
               <tr key={item._id}>
+                <td data-label="S.No.">{index + 1}</td>
                 <td data-label="Name">{item.name}</td>
-
                 <td data-label="Phone">{item.phone}</td>
                 <td data-label="Address">{item.address}</td>
                 <td data-label="Quantity">{item.quantityTotal} pis</td>

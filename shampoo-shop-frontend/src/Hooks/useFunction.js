@@ -47,6 +47,7 @@ const useFunction = () => {
   const [contacts, setContacts] = useState([]);
   const [contact, setContact] = useState({});
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { userInfo, authToken } = useFirebase();
   const alert = useAlert();
@@ -149,10 +150,12 @@ const useFunction = () => {
   // ====================================================
 
   useEffect(() => {
+    setLoading(true);
     axios
       .get(`${URL}/products`)
       .then((res) => {
         setProducts(res.data);
+        setLoading(false);
       })
 
       .catch(function (error) {
@@ -565,6 +568,7 @@ const useFunction = () => {
     disPrice,
     productImageRef,
     products,
+    loading,
     product,
     productUpdateData,
     updateDisPrice,

@@ -107,6 +107,7 @@ const UserTable = () => {
         <table aria-label="custom pagination table">
           <thead>
             <tr>
+              <th scope="col"> S.No.</th>
               <th scope="col"> Name</th>
               <th scope="col">Email</th>
               <th scope="col">Role</th>
@@ -120,8 +121,9 @@ const UserTable = () => {
                   page * rowsPerPage + rowsPerPage
                 )
               : users
-            ).map((item) => (
+            ).map((item, index) => (
               <tr key={item._id}>
+                <td data-label="S.No.">{index + 1}</td>
                 <td data-label="Name">{item.displayName}</td>
                 <td data-label="Email">{item.email}</td>
                 <td data-label="Role" style={{ textTransform: "capitalize" }}>

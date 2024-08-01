@@ -103,6 +103,7 @@ const MyOrderTable = () => {
       <table aria-label="custom pagination table">
         <thead>
           <tr>
+            <th scope="col"> S.No.</th>
             <th scope="col"> Title</th>
             <th scope="col">Category</th>
             <th scope="col">Quantity</th>
@@ -116,8 +117,9 @@ const MyOrderTable = () => {
           {(rowsPerPage > 0
             ? orders.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
             : orders
-          ).map((item) => (
+          ).map((item, index) => (
             <tr key={item._id}>
+              <td data-label="S.No.">{index + 1}</td>
               <td data-label="Title">
                 {item.orderProducts.map((product) => (
                   <p key={product._id}>{product.productTitle}</p>

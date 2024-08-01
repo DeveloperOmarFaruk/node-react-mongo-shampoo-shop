@@ -69,7 +69,7 @@ const OurProducts = () => {
             <Slider {...settings}>
               {products.map((item) => (
                 <div key={item._id}>
-                  <div class="product-card">
+                  <div className="product-card" style={{ width: "290px" }}>
                     <img
                       src={item.productImage}
                       alt="Product_Image"

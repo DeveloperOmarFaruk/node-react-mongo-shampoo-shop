@@ -55,8 +55,8 @@ const useFirebase = () => {
         })
           .then(() => {})
           .catch((error) => {});
-        alert.show("Register Successful");
-        navigate(`/home`);
+
+        navigate(`/`);
         setFormData({
           name: "",
           email: "",
@@ -81,7 +81,7 @@ const useFirebase = () => {
 
   // =====================================
   // Firebase Current User Functionality
-  // =======================================
+  // =====================================
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {

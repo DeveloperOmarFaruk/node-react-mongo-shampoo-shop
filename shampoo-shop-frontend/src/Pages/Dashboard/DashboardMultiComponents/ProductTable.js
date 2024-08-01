@@ -117,6 +117,7 @@ const ProductTable = () => {
         <table aria-label="custom pagination table">
           <thead>
             <tr>
+              <th scope="col"> S.No.</th>
               <th scope="col"> Title</th>
               <th scope="col">Category</th>
               <th scope="col">Price</th>
@@ -135,8 +136,9 @@ const ProductTable = () => {
                   page * rowsPerPage + rowsPerPage
                 )
               : products
-            ).map((item) => (
+            ).map((item, index) => (
               <tr key={item._id}>
+                <td data-label="S.No.">{index + 1}</td>
                 <td data-label="Title">{item.productTitle}</td>
                 <td data-label="Category">{item.productCategory}</td>
                 <td data-label="Price">$ {item.productPrice}</td>

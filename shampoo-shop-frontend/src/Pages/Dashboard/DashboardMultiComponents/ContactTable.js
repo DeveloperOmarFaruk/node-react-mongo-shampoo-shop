@@ -108,6 +108,7 @@ const ContactTable = () => {
         <table aria-label="custom pagination table">
           <thead>
             <tr>
+              <th scope="col"> S.No.</th>
               <th scope="col"> Email</th>
               <th scope="col">Subject</th>
               <th scope="col">Details</th>
@@ -122,8 +123,9 @@ const ContactTable = () => {
                   page * rowsPerPage + rowsPerPage
                 )
               : contacts
-            ).map((item) => (
+            ).map((item, index) => (
               <tr key={item._id}>
+                <td data-label="S.No.">{index + 1}</td>
                 <td data-label="Email">{item.contactEmail}</td>
                 <td data-label="Subject">{item.contactSubject}</td>
                 <td data-label="Details">
