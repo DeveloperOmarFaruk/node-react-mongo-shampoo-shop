@@ -29,39 +29,37 @@ const Products = () => {
             Products We Provide
           </h1>
 
-          <div className="d-flex">
-            <div
-              className="form-floating "
-              style={{ width: "50%", margin: "10px" }}
-            >
-              <input
-                type="text"
-                className="form-control"
-                id="floatingInput"
-                placeholder="Search Product..."
-                style={{ border: "1px solid #c033ca" }}
-                onChange={(e) => setSearchName(e.target.value)}
-              />
-              <label for="floatingInput">Search Product...</label>
+          <div className="row gx-3 gy-3">
+            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div className="form-floating ">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="floatingInput"
+                  placeholder="Search Product..."
+                  style={{ border: "1px solid #c033ca" }}
+                  onChange={(e) => setSearchName(e.target.value)}
+                />
+                <label for="floatingInput">Search Product...</label>
+              </div>
             </div>
 
-            <div
-              class="form-floating "
-              style={{ width: "50%", margin: "10px" }}
-            >
-              <select
-                class="form-select"
-                id="floatingSelect"
-                aria-label="Floating label select example"
-                style={{ border: "1px solid #c033ca" }}
-                onClick={(e) => setSelectCategory(e.target.value)}
-              >
-                <option value="All">All</option>
-                <option value="Men">Men</option>
-                <option value="Women">Women</option>
-                <option value="Baby">Baby</option>
-              </select>
-              <label for="floatingSelect">Select Category</label>
+            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div className="form-floating ">
+                <select
+                  className="form-select"
+                  id="floatingSelect"
+                  aria-label="Floating label select example"
+                  style={{ border: "1px solid #c033ca" }}
+                  onClick={(e) => setSelectCategory(e.target.value)}
+                >
+                  <option value="All">All</option>
+                  <option value="Men">Men</option>
+                  <option value="Women">Women</option>
+                  <option value="Baby">Baby</option>
+                </select>
+                <label for="floatingSelect">Select Category</label>
+              </div>
             </div>
           </div>
 
