@@ -1,4 +1,4 @@
- # Here is some UI and work shown in this repository
+
 #
 [Live Preview Project](https://shampoo-shop.netlify.app/)
 #
