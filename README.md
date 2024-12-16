@@ -4,7 +4,7 @@
 #
 ## Project Details
 #
-A simple dynamic e-commerce SPA(Single Page Application) has been created in this repository. Users can create an account and add the product to the cart to go to the purchase page and click the order confirm button to go cart page. After filling in the shipping information and clicking the checkout button, the user will be taken to the Stripe payment page. The user will be brought to the success page if the payment process is successful. Users can go to my order page for information on purchased items. Admin can create admin roles from users. Admin can add, update, and delete products. Admin order details can be seen from this SPA.
+A simple dynamic e-commerce SPA(Single Page Application) has been created in this repository. Users can create an account and add the product to the cart to go to the purchase page and click the order confirm button to go to the cart page. After filling in the shipping information and clicking the checkout button, the user will be taken to the Stripe payment page. The user will be brought to the success page if the payment process is successful. Users can go to my order page for information on purchased items. Admin can create admin roles from users. Admin can add, update, and delete products. Admin order details can be seen from this SPA.
 #
 ### `Technology Use`
 #
